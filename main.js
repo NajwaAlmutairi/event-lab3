@@ -1,5 +1,7 @@
 function changeChannel(num) {
-
+    let tvFrame = document.getElementById("image");
+    console.log(tvFrame);
+    
     let imagesList = [
         "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/blue-planet.jpg",
         "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/deadpool.jpg",
@@ -11,9 +13,6 @@ function changeChannel(num) {
         "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/star-wars-solo.jpeg",
         "https://ga-instruction.s3.amazonaws.com/assets/front-end-web-development/fewd-conditionals-images/stranger-things.jpg"
     ];
-
-    let tvFrame = document.getElementById("image");
-        console.log(tvFrame);
 
     if (imagesList.indexOf(num)) {
         tvFrame.src = imagesList[num];
